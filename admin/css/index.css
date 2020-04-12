@@ -1,0 +1,92 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family:'张海山锐线体简';
+}
+ul,li,a{
+  list-style: none;
+  outline: none;
+  display: inline-block;
+  color: black;
+}
+li,a{ cursor: pointer;}
+a:hover,#ul>li:first-child>a{color: cadetblue;text-decoration: none;}
+#fixed{position: fixed;width: 100%;background: white}
+#nav{
+  margin-right: 10px;
+  font-size: 0.9rem;
+  position: relative;
+  height: 2rem;
+}
+#ul{
+  float: right;
+  height: 1.8rem;
+  line-height: 1.9rem;
+  margin: 0;
+}
+header{
+  width: 100%;
+  top:0;height: 2rem;
+}
+
+/* footer */
+footer{
+  height: 6rem;
+  background: gray;
+  width: 100%;
+  position: absolute;
+ /*  bottom: 0; */
+}
+/* article */
+
+#container{
+  padding-bottom: 6rem;
+  width: 100%;
+  background: bisque;
+}
+/* left */
+#left{
+  width: 10rem;
+  float: left;
+  height: 31.5rem;
+  /* margin-bottom: -80px;
+  padding-bottom: 80px; */
+  background: whitesmoke
+}
+.parent{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.parent li{
+  line-height: 4rem;
+  width: 100%;
+  background: gray;
+  color:azure;
+  letter-spacing: 2px;
+}
+.parent>li:first-child{background: whitesmoke;color:gray;height: 5rem;line-height: 4rem;
+font-size: 1.5rem;}
+.child{
+  height: 8rem;
+  width: 100%;
+  margin: 0;padding: 0;
+  font-size: 0.95rem; 
+  display: none;
+}
+.child a{display:block;width: 100%}
+.child li{text-decoration: none;background: #eee;color: gray}
+.child li::before{
+   content: "· ";font-size:2rem;vertical-align: middle;
+}
+.child li:hover{color: #eee;background: gray}
+#right{
+  padding-left:10rem; 
+  height: 100px;
+  margin-bottom: -800px;
+  padding-bottom: 800px;
+  overflow: hidden;
+  background: #eee
+}

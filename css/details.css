@@ -1,0 +1,40 @@
+
+
+.tit-box{
+  text-align: center;
+  margin:1.5rem auto;
+}
+#article h1{
+  display: inline-block;
+  width: 13.2rem;
+  border-bottom:1px solid gray;
+  padding-bottom: 0.6rem; 
+}
+.list-div{
+  margin-left:0.6rem; clear: both;
+  font-size: 0.9rem;max-height: 200px;
+}
+.contentDiv div label{text-align: center;
+  font-size: 1.1rem;font-weight: 600;}
+.intro{
+  margin-top:3px;
+  overflow: hidden;
+  width: 400px;
+}
+.list-div{margin-left:0.6rem; clear: both;font-size: 14px;width:260px;max-height: 200px;}
+.changeList{width: 100%;}
+.changeList .list-2-0{
+  width: 35rem;
+  height :200px;
+  border: 1px solid #fff ;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: 0.1s ;
+}
+.list-2-0:hover{cursor: auto}
+.intro div label{font-size: 0.9rem;color: dimgray}
+.intro div{margin-top:1rem;padding-left: 1rem;width: 200px;display: inline-block;}
+.btn{margin-left: 1rem;vertical-align: bottom;color: darkcyan}
+.btnt{border: none; margin-top: 0.7rem;margin-left: 1rem;width: 6rem;height:2rem;background:#17afa1;color: white}
+.btnt:hover{background:none ;border: 1px solid black ;color: #17afa1}

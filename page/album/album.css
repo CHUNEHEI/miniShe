@@ -1,0 +1,39 @@
+
+
+#filesList{
+  display: block;
+  width: 400px;
+}
+h1{
+  padding-top:50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+body{background: whitesmoke}
+#contain{width: 80%;margin:0 auto;color:gray;
+background: white;height: auto;}
+.mainDiv{width: 90%;height: 200px;line-height: 200px;text-align: center;
+margin:0 auto;background: whitesmoke}
+a#upload{
+  margin-top: 1rem;
+  color:white;
+  position: absolute;
+  right: 100px;
+}
+a#back{
+  margin-top: 1rem;
+  color:white;
+  position: absolute;
+  right: 0px;
+}
+.btnDiv{
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+}
+#filesList{
+  padding-top:100px;
+  min-height: 200px;
+  width: 100%;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mini摄-预约拍照平台</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+  <div id="wrap">
+      <div id="bg-video">
+          <video id="video" src="https://s3.bytecdn.cn/aweme/resource/web/static/image/index/new-tvc_889b57b.mp4"
+          loop="loop" width="110%" height="100%"  loop autoplay
+          ></video>
+      </div>
+      <div id="main-body">
+          <div id="main-header">
+            <ul class="nav1">
+                <li><a href="javascript:;">首页</a></li>
+                <li><a  data-toggle="modal" data-target="#login">登录</a></li>
+                <li><a  data-toggle="modal" data-target="#register">注册</a></li>
+                <li><a href="page/aboutUs.html">关于我</a></li>
+            </ul>
+          </div>
+          
+          <div id="main-content">
+            <div id="title">
+              <img id="font" alt="看不到就算把" src="images/font.png"></img>
+              <div class="btn-primary"><a class="icon-android btn-hover"></a></div>
+            </div>
+          </div>       
+         
+        
+          <div id="main-footer">
+              <p>
+                  | 摄影 | 用户服务协议 | 隐私政策 | 账号找回 | 联系我们 |
+                  <br><br>
+                  2018 © 摄影界  | 个人所有 | 广东金融学院 |
+                  <br>
+                  中国互联网举报中心 |  违法和不良信息举报：020-8888 8888 | 举报邮箱：jubao@minishe.com
+                
+                  
+              
+              </p>
+          </div>
+      </div>
+  </div>
+  <div role="dialog" id="login" class="modal fade" >
+      <div class="modal-dialog">
+       <div class="modal-content" style="width: 400px;text-align: center;margin:10px auto">
+        <div class="modal-header" style="border: none"> 
+        <span data-dismiss="modal" style="cursor: pointer;float: right;">X</span>
+        <h4 class="modal-title text-success "  style="margin-top:20px;letter-spacing: 5px">登录</h4>
+        </div>
+         
+         <div class="modal-body" style="width: 100%;height: 100%;">
+            <form >
+                <div class="login_input" style="font-size:14px;width:246px ;height:40px;background: #fff;
+                border:1px solid #515a61;overflow: hidden;margin: 0 auto ">
+                    <i style="width: 20px;height: 20px;display: inline-block;vertical-align: middle;
+                    background: url(https://res.wx.qq.com/mpres/zh_CN/htmledition/comm_htmledition/style/page/page_login_z3b5429.png) no-repeat;
+                    margin:0 10px "                  
+                    ></i>
+                    <input id="userName" style="border:0px;padding:0px;width:200px;height:40px; 
+                    vertical-align: middle;line-height: 30px;text-indent: 5px" autofocus placeholder="输入您的用户名">
+                </div>
+                <div class="login_input" style="font-size:14px;width:246px ;height:40px;background: #fff;
+                border:1px solid #515a61;overflow: hidden;border-top:0px;margin: 0 auto">
+                    <i style="width: 20px;height: 20px;display: inline-block;vertical-align: middle;
+                    background: url(https://res.wx.qq.com/mpres/zh_CN/htmledition/comm_htmledition/style/page/page_login_z3b5429.png) no-repeat;
+                    margin:0 10px;background-position:0 -20px;"                  
+                    ></i>
+                    <input id="password"  type="password" style="border:0px;padding:0px;width:200px;height:40px;
+                    vertical-align: middle;line-height: 30px;text-indent: 5px" placeholder="输入您的密码">
+                </div>
+                <div class="login_content" style="position: relative;margin: 5px auto;font-size:14px;width:246px ;overflow: hidden; ">
+                    <div style="margin: 0 auto;">
+                        <label style="float: left;font-size: 14px;display:block;margin-top: 5px;font-weight: normal" >
+                          <input id="admin" type="checkbox">我是管理员
+                        </label>
+                        <label style="font-size: 14px;display:inline-block;letter-spacing: -0.1px;
+                        margin-top: 5px;position: absolute;right:0;font-weight: normal;color: #515a61" >
+                            <a href="javascript:;"> 找回账号或密码</a>
+                          </label>
+                    </div>
+                  <div style="clear: both;">
+                      <input id="loginBtn" class="btn-success btn-large"  type="button" value="登录"
+                      style="width:80px;height:30px;border-radius:2px;box-shadow:none;border: none
+                      ;font-size: 14px;margin: 10px 0" >
+                  </div>
+                </div>
+                </form>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div role="dialog" id="register" class="modal fade" >
+      <div class="modal-dialog">
+      <div class="modal-content" style="width: 400px;text-align: center;margin:10px auto">
+        <div class="modal-header" style="border: none"> 
+        <span data-dismiss="modal" style="cursor: pointer;float: right;">X</span>
+        <h4 class="modal-title text-success "  style="margin-top:20px;letter-spacing: 5px">注册</h4>
+        </div>
+        <div class="modal-body" style="width: 100%;height: 100%;">
+            <form style="width: 100%;height: 100%;">
+                
+                <div  class="reg_input" style="font-size:14px;width:246px ;height:40px;background: #fff;
+                border:1px solid #515a61;overflow: hidden;margin: 0 auto ">
+                    <i style="width: 20px;height: 20px;display: inline-block;vertical-align: middle;
+                    background: url(https://res.wx.qq.com/mpres/zh_CN/htmledition/comm_htmledition/style/page/page_login_z3b5429.png) no-repeat;
+                    margin:0 10px ;"                  
+                    ></i>
+                    <input id="rg_userName" name="userName"  style="border:0px;padding:0px;width:200px;height:40px;
+                    vertical-align: middle;line-height: 30px;text-indent: 5px"   placeholder="设置您的用户名" autofocus
+                     value="" onblur="isNull()" >
+                </div>
+                
+                <div id="reg_input_phone"  class="reg_input" style="font-size:14px;width:246px ;height:40px;background: #fff;
+                border:1px solid #515a61;overflow: hidden;margin: 0 auto;border-top:0; ">
+                    <i style="width: 20px;height: 20px;display: inline-block;vertical-align: middle;
+                    background: url(https://res.wx.qq.com/mpres/zh_CN/htmledition/comm_htmledition/style/page/page_login_z3b5429.png) no-repeat;
+                    margin:0 10px ;"                  
+                    ></i>
+                    <input id="rg_phone" name="phone" type="tel"  style="border:0px;padding:0px;width:200px;height:40px;
+                    vertical-align: middle;line-height: 30px;text-indent: 5px"   placeholder="输入您的手机号" autofocus
+                     value="" onblur="isNull()" >
+                </div>
+
+                <div id="reg_input_password"  class="reg_input" style="font-size:14px;width:246px ;height:40px;background: #fff;
+                border:1px solid #515a61;overflow: hidden;border-top:0px;margin: 0 auto">
+                    <i style="width: 20px;height: 20px;display: inline-block;vertical-align: middle;
+                    background: url(https://res.wx.qq.com/mpres/zh_CN/htmledition/comm_htmledition/style/page/page_login_z3b5429.png) no-repeat;
+                    margin:0 10px;background-position:0 -20px;"                  
+                    ></i>
+                    <input id="rg_password" type="password"  name="password"
+                    style="border:0px;padding:0px;width:200px;height:40px;
+                    vertical-align: middle;line-height: 30px;text-indent: 5px" placeholder="设置您的密码"
+                    onchange="confirm()" onblur="isNull()"
+                    >
+                </div>
+                <div id="reg_input_confirmpsd" class="reg_input" style="font-size:14px;width:246px ;height:40px;background: #fff;
+                border:1px solid #515a61;overflow: hidden;border-top:0px;margin: 0 auto">
+                    <i style="width: 20px;height: 20px;display: inline-block;vertical-align: middle;
+                    background: url(https://res.wx.qq.com/mpres/zh_CN/htmledition/comm_htmledition/style/page/page_login_z3b5429.png) no-repeat;
+                    margin:0 10px;background-position:0 -20px;"                  
+                    ></i>
+                    <input id="rg_confirmPsd"  type="password" style="border:0px;padding:0px;width:200px;height:40px;
+                    vertical-align: middle;line-height: 30px;text-indent: 5px" 
+                    onchange="confirm()" placeholder="再次确认密码">
+                </div>
+                <div id="reg_input_code" class="reg_input" style="font-size:14px;width:246px ;height:40px;background: #fff;
+                border:1px solid #515a61;overflow: hidden;border-top:0px;margin: 0 auto">
+                    <input id="rg_code" type="text" style="border:0px;padding:0px;width:200px;height:40px;
+                    vertical-align: middle;line-height: 30px;text-indent: 5px" vertical-align: middle;
+                     placeholder="输入验证码">
+                     <a href="javascript:;" onclick="getCode()"><span id="code_span" style="display: inline-block;height: 46px;width: 40px;
+                      vertical-align: middle; line-height: 40px;
+                     color: white;background: #7b757d">获取</span></a>
+                </div>
+                <div style="clear: both;">
+                      <p id="para" class="text-danger" style="display:none;margin-top:5px;
+                      font-size: 14px;">密码不一致</p>
+                      <p id="para1" class="text-danger" style="display:none;margin-top:5px;
+                      font-size: 14px;">手机号/用户名不能为空</p>
+                      <p id="para2" class="text-danger" style="display:none;margin-top:5px;
+                      font-size: 14px;">手机号码不正确</p>
+                       <p id="para3" class="text-danger" style="display:none;margin-top:5px;
+                      font-size: 14px;">密码不能为空</p>
+                      <input id="regBtn" type="button" class="btn-success btn-large" 
+                      style="width:80px;height:30px;border-radius:2px;box-shadow:none;border: none
+                      ;font-size: 14px;margin: 10px 0"  value="注册" />
+                </div>
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+    <script src="lib/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/login.js">  </script>
+    
+</body>
+</html>

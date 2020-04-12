@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>Mini摄--预约拍照平台</title>
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
+    <style>
+        html, body, #container {
+            height: 100%;
+            width: 100%;
+        }
+
+        .amap-icon img{
+            width: 25px;
+            height: 34px;
+        }
+        #ul{margin: 0 ;height: 35px;line-height: 35px}
+        #ul li{
+            list-style: none;
+            font-size: 16px;
+        }
+        #ul li a{ text-decoration: none;color:gray}
+        #ul li a:hover{ text-decoration: none;color:blue}
+    </style>
+</head>
+<body>
+        <div style="z-index: 1000;" id="fixed">
+                <div id="nav" >
+                    <ul id="ul"> 
+                        <li><a href="javascript:location.replace('../login.html');">退出</a></li>        
+                    </ul>
+                    </div>
+            </div>
+<div id="container"></div>
+
+
+<div class="input-card">
+    <h4>地图自适应</h4>
+    <input id="setFitView" type="button" class="btn" value="地图自适应显示" />
+</div>
+<div class="info">
+    <div id="centerCoord"></div>
+    <div id="tips"></div>
+</div>
+<script type="text/javascript"
+        src="https://webapi.amap.com/maps?v=1.4.12&key=您申请的key值"></script>
+<script type="text/javascript">
+    var map = new AMap.Map('container', {
+        resizeEnable: true,
+        center: [113.26900, 23.08332],
+        zoom: 13
+    });
+
+    map.clearMap();  // 清除地图覆盖物
+
+    var markers = [{
+        icon: '//a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-1.png',
+        position: [113.26900, 23.08632],
+        label: "<div class='info'>昌岗分店：海珠区宝岗大道431号</div>"
+    }, {
+        icon: '//a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-2.png',
+        position: [113.32459, 23.10668],
+        label:"<div class='info'>广州塔分店：花城广场广州塔4层</div>"
+    }, {
+        icon: '//a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-3.png',
+        position: [113.26900, 23.05532],
+        label:"<div class='info'>上下九分店：荔湾区上下九213号</div>"
+    },{
+        icon: '//a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-4.png',
+        position: [113.15300, 23.05432],
+        label: "<div class='info'>千灯湖分店：南海区海五路紫荆街3001号</div>"
+    },{
+        icon: '//a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-5.png',
+        position: [113.15660, 23.0635],
+        label: "<div class='info'>万达广场分店：南海区海七路万达广场富一层2001号</div>"
+    }];
+
+    // 添加一些分布不均的点到地图上,地图上添加三个点标记，作为参照
+    markers.forEach(function(marker) {
+        new AMap.Marker({
+            map: map,
+            icon: marker.icon,
+            position: [marker.position[0], marker.position[1]],
+            offset: new AMap.Pixel(-13, -30),
+            label: {content:marker.label,offset:(-0,-0)}
+        });
+    });
+
+
+    document.getElementById('tips').innerHTML = '成功添加三个点标记，其中有两个在当前地图视野外！';
+
+    // 添加事件监听, 使地图自适应显示到合适的范围
+    AMap.event.addDomListener(document.getElementById('setFitView'), 'click', function() {
+        var newCenter = map.setFitView();
+        document.getElementById('tips').innerHTML = '地图自适应显示到合适的范围内,点标记已全部显示在视野中！';
+    });
+</script>
+
+</body>
+</html>

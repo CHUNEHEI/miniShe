@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body{font-family:'张海山锐线体简';
+      margin: 0;
+      background: #38475a;
+    }
+    .box{
+      width:250px;
+      height: 250px;
+      border-radius:150px; 
+      position: fixed;
+      /* 居中 */
+      left: 0;right: 0;top: 0;bottom: 0;
+      margin:auto;
+      /* box-shadow 水平 垂直移动 阴影半径 阴影大小 */
+ /*      box-shadow: 0px 0px 10px 10px gray inset; */
+      cursor: pointer;
+    }
+    .redR{
+      width:0;
+      height: 0;
+      border-top:80px solid red;
+      border-left:80px solid red;
+      border-right:80px solid transparent;
+      border-bottom:80px solid transparent;
+      border-radius:50%; 
+      /* 这里是一个圆 transparent 透明 */
+      transform: rotate(-45deg);
+      /* 半圆 */
+      position: fixed;
+      /* 居中 */
+      left: 0;right: 0;top: 0;bottom: 0;
+      margin:auto;
+      transition: 0.5s
+    }
+    #r1{
+      border-top:60px solid white;
+      border-left:60px solid darkgray;
+      border-right:60px solid gold;
+      border-bottom:60px solid transparent;
+      transform: rotate(-45deg);
+      }
+      #r2{
+      border-top:40px solid transparent;
+      border-left:40px solid transparent;
+      border-right:40px solid darkorange;
+      border-bottom:40px solid darkorange;
+      z-index: -1;
+      transform: rotate(45deg);
+      }
+      .cir{
+        left: -40px;right: 0;top: -40px;bottom: 0;
+        margin:auto;
+        width: 15px;
+        height: 15px;
+        border-radius: 20px;
+        background: black;
+        position: fixed;
+        transition: 0.5s
+      }
+      .box:hover >.redR{
+        transform: rotate(135deg);
+        border-top:80px solid darkcyan;
+        border-left:80px solid darkcyan;
+      }
+      .box:hover >#r1{
+        transform: rotate(45deg);
+        border-top:60px solid white;
+        border-left:60px solid gold;
+        border-right:60px solid darkgrey;
+        border-bottom:60px solid transparent;
+      }
+      .box:hover >.cir{
+        transform: translateX(40px)
+      }
+    
+    h1,h2{color: white;text-align: center}
+    .show{position: absolute;bottom:3rem;opacity: 0;
+      margin: auto;left: 0;right: 0;transition: opacity ease 0.5s}
+    .box:hover ~ .show{opacity: 1;}
+  </style>
+</head>
+<body>
+    <div>
+      <h1>Mini摄影社</h1>
+      <h2>- 地表最专业拍摄 -</h2>
+    </div>
+
+    <div class="box" >
+          <div class="redR">
+            
+          </div>
+          <div id="r1" class="redR"></div>
+          <div id="r2" class="redR"></div>
+          <div class="cir"></div>
+          
+      </div>
+      <div class="show"><h2>点击进入</h2>></div>
+  <script>
+      var box=document.getElementsByClassName("box")[0];
+      box.addEventListener("click",boxClick,false)
+      function boxClick(){
+      /*   var search=window.location.search.slice();
+        var name=search.split("=")[1];
+        window.location.href="index0.html?name="+name; */
+        window.location.href="login.html"; 
+      }
+  </script>
+</body>
+</html>

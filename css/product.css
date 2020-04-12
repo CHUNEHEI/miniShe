@@ -1,0 +1,126 @@
+html,body{font-family:'张海山锐线体简';}
+img{width:200px;height:200px;}
+ul{list-style: none}
+
+.list-box{
+  width:1000px;
+  margin:0 auto;
+  height:72px;
+  border-bottom: 1px solid #949494;
+}
+.changeList-box{ 
+  width:1000px;
+  margin:0 auto;
+  
+}
+.list{
+  float: right;
+  margin-top: 1.5rem;
+}
+.list-box-title{
+  width: 600px;display: inline-block;
+}
+.list-box ul li{
+  width:30px;
+  height: 30px;
+  float: left;
+  display: block;
+  background: url('../images/toggle.png') no-repeat;
+ 
+}
+#list-1{ background-position:0px -34px}
+#list-2{ background-position:-34px -34px}
+
+.list-box ul li:hover{cursor: pointer}
+.changeList{list-style:none ;margin:5px;}
+.cList:first-child{
+  margin-top: 20px;
+  border-top: none;
+}
+.cList{
+  border-top: 1px solid gray;
+  padding:20px 10px 0 0;
+  margin-bottom: 10px;
+}
+.cList span::before{content: '|';margin-right:10px;}
+.cList a{color:#5bb6cc}
+.cList a::after{content: ">>"}
+.cList-title{
+  margin-left: 60px;
+  margin-bottom:10px; 
+  padding:5px;
+  color:gray;
+  font-size: 2.2rem;
+  width: 400px;
+  font-weight: 700;
+}
+
+
+.changeList .list-1-0{
+  height :260px;
+  width: 240px;
+  border: 1px solid #fff ;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  transition: 0.01s;
+}
+.changeList .list-2-0{
+  width: 100%;
+  height :200px;
+  border: 1px solid #fff ;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  transition: 0.1s ;
+}
+.changeList .list-2-0 a{
+  float: left;
+}
+#span{outline: none;cursor: pointer;font-size: 12px;color:grey}
+.model_info{text-align: center}
+
+.img{float: left;}
+.list-div{margin-left:10px; clear: both;text-align: left;
+  font-size: 14px;max-height: 200px;width: 600px}
+
+.contentDiv div label{text-align: center;font-size: 1.1rem;font-weight: 600;}
+.square-div{
+   text-align: center;
+   width:240px;
+   max-height: 100px;
+   clear: both;
+   font-size: 0.9rem;
+   margin-top:5px;
+}
+.nothing{display: none;}
+
+.intro{
+  margin-top:3px;
+  overflow: hidden;
+}
+.intro div label{font-size: 0.9rem;color: dimgray}
+.intro div{margin-top:1.5rem;padding-left: 3rem;width: 250px;display: inline-block;}
+.btn{ margin-top: 1.5rem;margin-left: 3rem;width: 6rem;background:#17afa1}
+aside{
+  position:absolute;top:120px;
+}
+aside ul{
+  background: rgba(145, 194, 175, 0.719);
+  margin-left:20px;
+  width: 150px;
+  color:#eee;
+  list-style: none;
+  text-align: center
+}
+aside ul li{
+  border-bottom: 1px solid #fff;
+  display: block;
+  width: 150px;
+  height: 30px;
+  margin-top:5px ;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+

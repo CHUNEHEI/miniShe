@@ -1,0 +1,113 @@
+body{
+  background: seashell;
+  padding: 0;
+  margin: 0
+}
+article{
+  padding-top:50px
+}
+article,footer,header{
+  width: 90%;
+  background:white;
+  margin: 0 auto;
+  padding-bottom:50px;
+}
+img{
+  overflow: hidden;
+  width: 90%;
+}
+.line{
+  height: 2px;width: 300px;
+  background: #ffeadc;
+  margin: 10px auto
+}
+.headTitle{
+  text-align: center;
+  font-family:'微软雅黑' ;
+  margin-bottom:50px 
+}
+.headTitle span{
+  color:rgb(73, 73, 73);
+  letter-spacing: 5px;
+  font-size: 30px
+}
+.albumUl,.picUl{
+  display: flex;
+  align-content:space-around;
+  list-style: none;
+}
+.picUl{
+  padding: 0;
+  flex-wrap: wrap;
+  flex-basis: 4;
+}
+li.pic{
+  flex:25%;
+  text-align: center;
+  margin: 15px 5px; 
+  border: 1px rgb(221, 221, 221) solid;
+  background: #fdfcfc
+}
+.albumDoc{
+  flex:1;
+  text-align: center;
+  cursor: default;
+}
+.myAlbum{
+  margin: 15px auto;
+  display:block;
+  width: 150px;
+  height: 150px;
+  background-image: url('../../images/document.jpg');
+  background-position: -60px -20px;
+  background-size: 400%;
+  cursor: pointer;
+}
+.myAlbum:hover{
+  transform:scale(1.1) ;
+}
+#myUpload{
+  background-position: -225px -20px;
+}
+.albumDoc span{
+  font-size: 20px;
+  color:dimgray
+}
+.btnDiv{
+  margin-top: 50px;
+  text-align: center;
+}
+.albumDoc a{text-decoration: none}
+
+div.btn{
+  /* background: rgb(73, 73, 73); */
+  line-height: 40px;
+  color:white;
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  border-radius: 90px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+footer{
+  padding-top: 100px;
+}
+.infoDiv{
+  position: relative;
+   margin-top: 50px;
+   text-align: center  
+}
+.infoDiv span{
+  font-size: 20px;
+}
+.infotable{
+    margin: 0 auto;
+    line-height: 30px
+}
+li.pic img{
+  overflow: hidden;
+  height: 200px;
+  width:auto;
+}

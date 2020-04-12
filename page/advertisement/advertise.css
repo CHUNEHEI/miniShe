@@ -1,0 +1,65 @@
+.banner {
+  width: 500px;
+  height: 350px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.banner img{
+  overflow: hidden;
+  width: 100%
+}
+.content {
+  width: 80%;
+  height: auto;
+	max-width: 960px;
+	margin: 60px auto;
+	overflow: hidden;
+}
+.content h3 {
+  text-align: center;
+  color: rgb(73, 73, 73);
+  letter-spacing: 5px;
+  font-size: 30px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.content .info {
+  flex:1;
+	height: auto;
+	display: inline-block;
+}
+.content .infoText{
+  flex: 1;
+  position: relative;
+}
+.infoText a.getBtn{
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  border-radius: 15px;
+  background: green;
+  color:white;
+}
+.infoText a.backBtn{
+    position: absolute;
+    bottom: 0;left:150px;
+    width: 100px;
+    border-radius: 15px;
+    background:red;
+    color:white;
+}
+.content p {
+  font-size: 14px;
+  color: darkslategray;
+	text-align: right;
+	margin-top: 30px ;
+}
+.container{
+  display: flex;
+  align-content: space-between;
+}
+.infoText .table{
+  line-height: 30px;
+  margin-left: 40px;
+}

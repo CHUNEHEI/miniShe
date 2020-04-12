@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mini摄-预约拍照平台</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="css/product.css" />
+  </script>
+ </head>
+ <body>
+        <div id="fixed">
+    <div id="nav">
+            <ul id="ul">
+                <li>欢迎 [ <a></a> ]
+                </li>
+                <li><a>个人中心</a><ul id="center" style="display: none">
+                    <li><a>个人信息</a></li><li><a>我的订单</a></li>
+                </ul></li>
+                <li><a href="javascript:location.replace('login.html');">退出</a></li>        
+            </ul>
+            <form style="float:right;" method="post" action="page/search.php"><input hidden id="uname" name="uname">
+                    <input id="search" style="color: gray" placeholder="搜一搜要拍啥子..." name="kw" type="search">
+                  <input id="submit" hidden type="submit">
+            </form>
+    </div>
+    </div>
+      <article>
+            <div style="padding-top:2rem;overflow: hidden;text-align: center;width: 100%">    
+                    <iframe src="page/banner.html" width="100%" height="620px" frameBorder="0"></iframe>
+            </div>
+      <div id="left" style="background-color:unset ">
+        <div class="list-box"> 
+         <div class="list-box-title"><h1>产品信息</h1></div>
+         <!-- 转换样式列表 -->
+          <ul class="list">
+          <li class="list-1" id="list-1" ></li>
+          <li class="list-2" id="list-2" ></li>
+         </ul>
+        </div>
+       <div class="changeList-box" id="changeList" >
+        <div class="cList">  
+          <span class="cList-title" id="zjz">证件照</span>
+          <a>更多</a>
+        </div> 
+          <ul class="changeList" >
+             <li class="list-1-0 " name="list">
+                 <div class="model_info">
+                     <a href="page/proInfo.html?name=tom&eName=gatxz"><img src="images/night.jpg"></a>
+                     <div class="contentDiv" style="float: left;">
+                     <div class="square-div" name="list-div" >
+                       
+                         <label>港澳通行证</label>
+                         <div class="intro">
+                            蓝底 33mm×48mm
+                             <!-- 港澳通行证33mm×48mm
+                            大二寸35mm×45mm
+                            护照33mm×48mm
+                            毕业生照33mm×48mm
+                            身份证22mm×32mm 大陆第二代居民身份证尺寸改为：26mm×32mm(分辨率350dpi)
+                            驾照21mm×26mm -->
+                        </div>
+                       </div>
+                       <div class="list-div nothing"  name="list-div1" >
+                      
+                            <label>港澳通行证</label>
+                            <div class="intro">
+                                    <div> <label>规格：</label>蓝色背景</div>
+                                    <div> <label>大小：</label>33mm×48mm</div>
+                                    <div> <label>副本数量：</label>6张(不含电子照)</div>
+                                    <div> <label>交照时间：</label>立即交收 </div><br>
+                                    <button name="gatxz" class="btn btn-info">详情</button>
+                            </div>
+                      </div>
+                       </div>
+                   </div>
+             </li>
+             <li class="list-1-0" name="list">
+                 <div class="model_info">
+                    <a href="page/proInfo.html?name=tom&eName=sfz"><img src="images/night.jpg"></a>
+                     <div class="contentDiv" style="float: left;">
+                     <div class="square-div" name="list-div" >
+                       
+                        <label>身份证</label>
+                         <div class="intro">红底 26mm×32mm</div>
+                       </div>
+                       <div class="list-div nothing"  name="list-div1" >
+                      
+                            <label>身份证</label>
+                            <div class="intro">
+                                    <div> <label>规格：</label>红色背景</div>
+                                    <div> <label>大小：</label>26mm×32mm </div>
+                                    <div> <label>副本数量：</label>8张(不含电子照)</div>
+                                    <div> <label>交照时间：</label>立即交收 </div><br>
+                                    <button name="sfz" class="btn btn-info">详情</button>
+                            </div>
+                      </div>
+                       </div>
+                   </div>
+             </li>
+             <li class="list-1-0" name="list">
+                 <div class="model_info">
+                        <a  href="page/proInfo.html?name=tom&eName=jz"><img src="images/night.jpg"></a>
+                     <div class="contentDiv" style="float: left;">
+                     <div class="square-div" name="list-div" >
+                       
+                         <label>驾照</label>
+                         <div class="intro">白底 21mm×26mm</div>
+                       </div>
+                       <div class="list-div nothing"  name="list-div1" >
+                      
+                            <label>驾照</label>
+                            <div class="intro">
+                                <div> <label>规格：</label>白色背景</div>
+                                <div> <label>大小：</label>21mm×26mm </div>
+                                <div> <label>副本数量：</label>6张(含电子照)</div>
+                                <div> <label>交照时间：</label>立即交收 </div><br>
+                                <button name="jz" class="btn btn-info">详情</button>
+                        </div>
+                      </div>
+                       </div>
+                   </div>
+             </li>
+          </ul>
+           
+           <div class="cList">
+             <span class="cList-title" id="ysz">艺术照</span>
+             <a>更多</a>
+           </div>
+           <ul class="changeList" >
+            <li class="list-1-0" name="list">
+              <div class="model_info">
+                  <a href="page/proInfo.html?name=tom&eName=xyshz"><img src="images/night.jpg"></a>
+                  <div class="contentDiv" style="float: left;">
+                  <div class="square-div" name="list-div" >
+                      <label>校园生活照</label>
+                      <div class="intro">校园生活总是美好</div>
+                    </div>
+                    <div class="list-div nothing"  name="list-div1" >
+                      
+                            <label>校园生活照</label>
+                            <div class="intro">
+                                    <div> <label>拍摄场地：</label>校内</div>
+                                    <div> <label>拍摄时长：</label>3小时</div>
+                                    <div> <label>底片数量：</label>整辑100张 精修30张</div>
+                                    <div> <label>交照时间：</label>7个工作日 </div><br>
+                                    <button name="xyshz" class="btn btn-info">详情</button>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+          </li>
+          <li class="list-1-0 " name="list">
+              <div class="model_info">
+                  <a href="page/proInfo.html?name=tom&eName=byz"><img src="images/night.jpg"></a>
+                  <div class="contentDiv" style="float: left;">
+                  <div class="square-div" name="list-div" >
+                    
+                      <label>毕业照</label>
+                      <div class="intro">见证成长的毕业礼</div>
+                    </div>
+                    <div class="list-div nothing"  name="list-div1" >
+                      
+                            <label>毕业照</label>
+                            <div class="intro">
+                                    <div> <label>拍摄内容：</label>毕业照跟拍</div>
+                                    <div> <label>拍摄时长：</label>一天</div>
+                                    <div> <label>底片数量：</label>整辑300张  精修30张</div>
+                                    <div> <label>交照时间：</label>7个工作日 </div><br>
+                                    <button name="byz" class="btn btn-info">详情</button>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+          </li>
+          <li class="list-1-0" name="list">
+              <div class="model_info">
+                  <a href="page/proInfo.html?name=tom&eName=hsz"><img src="images/night.jpg"></a>
+                  <div class="contentDiv" style="float: left;">
+                      <div class="square-div" name="list-div" >
+                    
+                      <label>婚纱照</label>
+                      <div class="intro">留下最美的此刻</div>
+                    </div>
+                    <div class="list-div nothing"  name="list-div1" >
+                      
+                            <label>婚纱照</label>
+                            <div class="intro">
+                                    <div> <label>外租场地费用：</label>自费</div>
+                                    <div> <label>拍摄时长：</label>两个工作日</div>
+                                    <div> <label>底片数量：</label>整辑400张 精修50张</div>
+                                    <div> <label>交照时间：</label>7个工作日 </div><br>
+                                    <button name="hsz" class="btn btn-info">详情</button>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+          </li>
+           </ul>
+        <div class="cList">
+        <span class="cList-title" id="zjz">提供优质服务</span>
+        
+        </div>
+        <ul class="changeList">
+            <li class="list-1-0" >
+                <div class="model_info">
+                    <img  style="clear: left;width: 100px;height: auto;" src="images/facial.png">
+                    <div class="contentDiv" style="float: left;">
+                        <div class="square-div" >
+                      
+                        <label>美妆</label>
+                        <div class="intro">专心化妆<br>化妆其实是第二职业</div>
+                      </div>
+                      
+                      </div>
+                  </div>
+            </li>
+            <li class="list-1-0" >
+                <div class="model_info">
+                
+                    <img style="clear: left;width: 100px;height: auto;" src="images/cam.png">
+                
+                    <div  class="contentDiv" >
+                        <div class="square-div"  >
+                      
+                        <label>拍照</label>
+                        <div class="intro">专业拍摄<br>我的特异功能是发现你的美</div>
+                      </div>
+                      
+                      </div>
+                  </div>
+            </li>
+            <li class="list-1-0" >
+                <div class="model_info">
+                    <img style="clear: left;width: 100px;height: auto;"src="images/ps.png">
+                    <div class="contentDiv" style="float: left;">
+                        <div class="square-div"  >
+                      
+                        <label>修图</label>
+                        <div class="intro">专注美颜<br>全凭颜值的小修改</div>
+                      </div>
+                     
+                      </div>
+                      </div>
+                  </div>
+            </li> 
+        </ul>
+       </div>
+     </div>
+    
+  </article>
+      
+  <div id="main-footer">
+        <p>
+            | 摄影 | 用户服务协议 | 隐私政策 | 账号找回 | 联系我们 |
+            <br><br>
+            2018 © 摄影界  | 个人所有 | 广东金融学院 |
+            <br>
+            中国互联网举报中心 |  违法和不良信息举报：020-8888 8888 | 举报邮箱：jubao@minishe.com
+          
+            
+        
+        </p>
+    </div>
+        
+<script src="lib/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/product.js"></script>
+
+   <script src="js/ushow.js"> </script>
+ </h1>
+</html>

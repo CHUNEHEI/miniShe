@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mini摄--预约拍照平台</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+  <link rel="stylesheet" type="text/css" href="userInfo.css" />
+</head>
+<body>
+    <div id="fixed" style="z-index:20">
+        <div id="nav" >
+            <ul id="ul">
+                <li>欢迎 [ <a></a> ]
+                </li>
+                <li><a>个人中心</a><ul id="center" style="display: none">
+                    <li><a>个人信息</a></li><li><a>我的订单</a></li>
+                </ul></li>
+                <li><a href="javascript:location.replace('../../login.html');">退出</a></li>        
+            </ul>
+            <form style="float:right;" method="post" action="../search.php"><input hidden id="uname" name="uname">
+              <input id="search" style="color: gray" placeholder="搜一搜要拍啥子..." name="kw" type="search">
+            <input id="submit" hidden type="submit">
+            </form>
+        </div>
+    </div>
+    <div class="main-container">
+      <h1>用户个人信息</h1>
+    
+      <input id="getId" type="text" hidden> 
+      <form id="edit">
+      <table class="table table-responsive table-hover">
+        <tbody>
+            <tr>
+              <td class="col-lg-2">名称</td>
+              <td class="col-lg-4"><span id="username"></span></td>
+              <td class="col-lg-2">真实名称</td>
+              <td class="col-lg-4"><input type="text" id="realname" name="realname" readonly></td>
+            </tr>
+            <tr>
+                <td class="col-lg-2">手机</td>
+                <td class="col-lg-4"><input type="text" id="phone" name="phone" readonly></td>
+                <td class="col-lg-2">违规次数</td>
+                <td class="col-lg-4"><span id="breakTimes"></span>次</td>
+            </tr>
+            <tr>
+                <td class="col-lg-2">电子邮箱</td>
+                <td class="col-lg-4"><input type="text" id="email" name="email" readonly></td>
+                <td class="col-lg-2">收货地址</td>
+                <td class="col-lg-4"><input type="text" id="address" name="address" readonly></td>
+            </tr>
+            <tr>
+                <td class="col-lg-2">密码</td>
+                <td class="col-lg-4"><input type="password" id="pwd" name="pwd" readonly></td>
+                <td class="col-lg-2">确认密码</td>
+                <td class="col-lg-4"><input type="password" id="confirmPwd" readonly></td>
+            </tr>
+            <tr>
+                <td class="col-lg-3">我的优惠券</td>
+                <td class="col-lg-4"><a id="myCoupon">查看我的优惠券</a></td>
+                <td class="col-lg-2">我的相簿</td>
+                <td class="col-lg-4"><a href="../album/index.html">查看我的相簿</a></td>
+            </tr>
+           <tr>
+             <td id="btnDiv"colspan="4" style="text-align: center;
+             height: 2rem;padding-top:1rem">
+             <span class="btn" id="editBtn">修改</span>
+             <span class="btn" id="cancelBtn">取消</span>
+            </td>
+             
+           </tr>
+        </tbody>
+      </table>
+      </form>
+    
+    </div>
+   
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">我的优惠券</h4>
+                </div>
+                <div class="modal-body">
+                  <table id="couponTable" class="table table-responsive">
+                    <tr>
+                        <th>优惠券名称</th><th>有效期限</th>
+                    </tr>
+                    
+                  </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+    
+<script src="../../lib/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="userInfo.js"></script>
+<script src="../../js/ushow.js"> </script>
+</body>
+</html>
